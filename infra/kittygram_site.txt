@@ -1,5 +1,5 @@
-ip: 158.160.7.192
+IP: 158.160.7.192;
 name_taski: https://d1g-1t.bounceme.net;
 name_kittygram: https://kittygram-project.bounceme.net
-login: Pavel
-password: 123487
+login: Pavel;
+password: 123487;
