@@ -1,5 +1,5 @@
 server {
-    server_name 158.160.7.192 d1g-1t.bounceme.net;
+    server_name d1g-1t.bounceme.net;
 
     location /api/ {
         proxy_pass http://127.0.0.1:8000;
@@ -24,7 +24,8 @@ server {
 }
 
 server {
-    server_name 158.160.7.192 kittygram-project.bounceme.net;
+
+    server_name kittygram-project.bounceme.net;
 
     location /api/ {
         client_max_body_size 20M;
@@ -37,7 +38,7 @@ server {
     }
 
     location /media/ {
-        alias /var/www/kittygram/media;
+        alias /var/www/kittygram/;
     }
 
     location / {
@@ -61,7 +62,7 @@ server {
     } # managed by Certbot
 
     listen 80;
-    server_name 158.160.7.192 d1g-1t.bounceme.net;
+    server_name d1g-1t.bounceme.net;
     return 404; # managed by Certbot
 }
 
